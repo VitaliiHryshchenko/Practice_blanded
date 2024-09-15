@@ -5,7 +5,7 @@
 // Забрати завдання зі списку.
 // Список із завданнями має бути доступним після перезавантаження сторінки.
 
-export const refs = {
-  taskForm: document.querySelector('#task-form'),
-};
-console.log(refs.taskForm);
+import { onTaskFormSubmit } from './handlers';
+import { refs } from './refs';
+
+refs.taskForm.addEventListener('submit', onTaskFormSubmit);
