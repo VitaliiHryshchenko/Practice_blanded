@@ -5,7 +5,7 @@
 // Забрати завдання зі списку.
 // Список із завданнями має бути доступним після перезавантаження сторінки.
 
-import { onTaskFormSubmit } from './handlers';
-import { refs } from './refs';
+import { onTaskFormSubmit } from './handlers.js';
+import { refs } from './refs.js';
 
 refs.taskForm.addEventListener('submit', onTaskFormSubmit);
